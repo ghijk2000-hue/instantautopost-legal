@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InstantAutoPost — Terms & Privacy</title>
+<style>
+:root {
+  --bg: #faf3ec;
+  --surface: #ffffff;
+  --surface-hushed: #f3e8dd;
+  --ink: #3f2f24;
+  --ink-soft: #6b5645;
+  --accent: #b5652e;
+  --border: #e6d7c7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #201811;
+    --surface: #2b2119;
+    --surface-hushed: #362a20;
+    --ink: #f3e6d8;
+    --ink-soft: #c3ac97;
+    --accent: #e39569;
+    --border: #4a3a2a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 24px 96px; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 8px;
+  padding: 16px 0;
+  margin-bottom: 8px;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.nav a {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+.nav a:hover, .nav a:focus-visible { color: var(--accent); border-color: var(--accent); }
+
+header.masthead { padding: 40px 0 24px; }
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+h1 {
+  margin: 0 0 8px;
+  font-family: Georgia, "Iowan Old Style", serif;
+  font-size: clamp(26px, 5vw, 32px);
+  text-wrap: balance;
+}
+.sub { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
+
+section.doc {
+  scroll-margin-top: 72px;
+  padding-top: 40px;
+}
+section.doc h2 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+.doc .updated {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+  font-variant-numeric: tabular-nums;
+}
+
+.clause { margin: 22px 0; }
+.clause h3 {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 15.5px;
+  margin: 0 0 8px;
+}
+.clause h3 span.num {
+  font-family: Georgia, serif;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+.clause p { margin: 0 0 10px; max-width: 62ch; color: var(--ink); }
+.clause p:last-child { margin-bottom: 0; }
+.clause ul { margin: 8px 0; padding-left: 20px; max-width: 62ch; }
+.clause li { margin: 4px 0; }
+
+hr.rule { border: none; border-top: 1px solid var(--border); margin: 48px 0 0; }
+
+.contact {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+}
+.contact code {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 13px;
+  background: var(--surface-hushed);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--ink-soft);
+  font-size: 12.5px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav">
+    <a href="#terms">Terms of Service</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
+  <header class="masthead">
+    <p class="eyebrow">George's English Club</p>
+    <h1>InstantAutoPost — Terms &amp; Privacy</h1>
+    <p class="sub">Legal terms for the InstantAutoPost application, which publishes George's English Club's own educational video content to TikTok, Instagram, and YouTube on behalf of the account owner.</p>
+  </header>
+
+  <section class="doc" id="terms">
+    <h2>Terms of Service</h2>
+    <p class="updated">Effective 2026-08-06</p>
+
+    <div class="clause">
+      <h3><span class="num">1</span> What this is</h3>
+      <p>InstantAutoPost is a single-purpose automation tool built and operated by the owner of the "George's English Club" content brand. It generates short English-language learning videos and publishes them to the brand's own social accounts (TikTok, Instagram, YouTube). It is not a public product, does not accept sign-ups, and is not offered to third parties.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">2</span> Scope of use</h3>
+      <p>The application only posts content the account owner has authored and approved. It authenticates directly against the TikTok account it publishes to, using credentials the account owner controls.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">3</span> No warranty</h3>
+      <p>The application is provided as-is, for the operator's own use. It is not offered to the public with any guarantee of uptime, accuracy, or fitness for a particular purpose.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">4</span> Changes</h3>
+      <p>These terms may be updated as the application's functionality changes. The current version always applies.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">5</span> Contact</h3>
+      <p>Questions about these terms can be sent to the contact address below.</p>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="doc" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Effective 2026-08-06</p>
+
+    <div class="clause">
+      <h3><span class="num">1</span> What data this app touches</h3>
+      <p>InstantAutoPost accesses only:</p>
+      <ul>
+        <li>The TikTok account's authentication token, used solely to publish videos to that same account.</li>
+        <li>Video files, captions, and hashtags authored by the account owner ahead of publishing.</li>
+      </ul>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">2</span> What it does not do</h3>
+      <p>This application does not collect data from any third party, does not read or store other users' TikTok data, does not sell or share data with advertisers, and does not use tracking cookies or analytics SDKs beyond what TikTok itself provides to app developers.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">3</span> Storage</h3>
+      <p>Video files and captions are stored locally by the operator only for as long as needed to prepare and publish a post. Authentication tokens are stored securely and used only for the account they were issued to.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">4</span> Your control</h3>
+      <p>Because this app operates on a single account controlled by its own operator, access can be revoked at any time from that account's TikTok connected-apps settings.</p>
+    </div>
+
+    <div class="clause">
+      <h3><span class="num">5</span> Contact</h3>
+      <div class="contact">
+        Questions about this privacy policy: <code>george.english.club</code> (TikTok/Instagram/YouTube — George's English Club)
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    George's English Club — InstantAutoPost
+  </footer>
+</div>
+</body>
+</html>
