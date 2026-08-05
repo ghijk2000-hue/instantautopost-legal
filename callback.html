@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok連携 - 認証コード</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #faf3ec;
+    color: #3f2f24;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+    padding: 24px;
+  }
+  .card {
+    max-width: 520px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e6d7c7;
+    border-radius: 14px;
+    padding: 28px;
+  }
+  h1 { font-size: 18px; margin: 0 0 12px; }
+  p { color: #6b5645; font-size: 14px; line-height: 1.6; }
+  .code-box {
+    margin-top: 16px;
+    padding: 14px;
+    background: #f3e8dd;
+    border: 1px solid #e6d7c7;
+    border-radius: 8px;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 13px;
+    word-break: break-all;
+    user-select: all;
+  }
+  .error { color: #b5652e; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>TikTok連携: 認証コード</h1>
+    <p>下のコードをコピーして、ターミナルに貼り付けてください。</p>
+    <div class="code-box" id="code">読み込み中...</div>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const error = params.get("error");
+    const box = document.getElementById("code");
+    if (code) {
+      box.textContent = code;
+    } else if (error) {
+      box.textContent = "エラー: " + error;
+      box.classList.add("error");
+    } else {
+      box.textContent = "コードが見つかりません。";
+      box.classList.add("error");
+    }
+  </script>
+</body>
+</html>
